@@ -1,7 +1,7 @@
 class PigLatinizer
 
-  def initialize(words)
-    @words = words.split(" ")
+  def initialize()
+    #@words = words.split(" ")
   end
 
   def piglatinize
