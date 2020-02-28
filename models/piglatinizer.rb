@@ -8,7 +8,7 @@ class PigLatinizer
       cons = []
       latinized = ""
 
-      until letters.first() === /[aeiou]/ || letters.empty?
+      until letters.first.match(/[aeiou]/) || letters.empty?
         cons.push(letters.shift)
       end
 
@@ -19,7 +19,6 @@ class PigLatinizer
       end
 
       latinized + "ay"
-      binding.pry
     end
     plwords.join(" ")
   end
