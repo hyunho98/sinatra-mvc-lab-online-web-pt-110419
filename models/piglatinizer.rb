@@ -8,7 +8,7 @@ class PigLatinizer
       cons = []
       latinized = ""
 
-      if word.length > 1
+      if word.length > 1 && letters.first.match(/[aeiou]/) == nil
         until letters.first.match(/[aeiou]/) || letters.empty?
           cons.push(letters.shift)
         end
