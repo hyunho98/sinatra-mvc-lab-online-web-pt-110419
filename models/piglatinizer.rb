@@ -18,9 +18,7 @@ class PigLatinizer
       if cons.length == 0
         latinized = word + "w"
       else
-        cons.length.times do
-          letters.shift
-        end
+        cons.length.times { letters.shift }
         latinized = letters.join() + cons.join()
       end
       latinized + "ay"
