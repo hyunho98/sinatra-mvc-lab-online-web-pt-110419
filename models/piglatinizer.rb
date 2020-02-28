@@ -2,8 +2,7 @@ require 'pry'
 class PigLatinizer
 
   def piglatinize(phrase)
-    phrase1 = phrase + " "
-    words = phrase1.split(" ")
+    words = phrase.split(" ")
     plwords = words.collect do |word|
       letters = word.split("")
       cons = []
