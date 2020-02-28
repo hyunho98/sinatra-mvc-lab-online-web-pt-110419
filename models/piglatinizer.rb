@@ -23,6 +23,6 @@ class PigLatinizer
 
       latinized + "ay"
     end
-
+  end
 
 end
