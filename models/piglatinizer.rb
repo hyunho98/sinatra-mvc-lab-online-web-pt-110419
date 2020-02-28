@@ -20,6 +20,7 @@ class PigLatinizer
       else
         latinized = letters.join() + cons.join()
       end
+      
       latinized + "ay"
     end
 
