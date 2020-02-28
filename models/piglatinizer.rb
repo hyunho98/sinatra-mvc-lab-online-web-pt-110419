@@ -1,3 +1,4 @@
+require 'pry'
 class PigLatinizer
 
   def piglatinize(phrase)
@@ -18,6 +19,7 @@ class PigLatinizer
       end
 
       latinized + "ay"
+      binding.pry
     end
     plwords.join(" ")
   end
