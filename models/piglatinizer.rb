@@ -7,7 +7,7 @@ class PigLatinizer
       cons = []
       latinized = ""
 
-      until letters.first() === /[aeiou]/ || letters.isempty?
+      until letters.first() === /[aeiou]/ || letters.empty?
         cons.push(letters.shift)
       end
 
