@@ -8,8 +8,10 @@ class PigLatinizer
       cons = []
       latinized = ""
 
-      until letters.first.match(/[aeiou]/) || letters.empty?
-        cons.push(letters.shift)
+      if word.length > 1
+        until letters.first.match(/[aeiou]/) || letters.empty?
+          cons.push(letters.shift)
+        end
       end
 
       if cons.length == 0
