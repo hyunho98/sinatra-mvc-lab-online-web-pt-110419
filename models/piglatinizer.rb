@@ -1,11 +1,7 @@
 class PigLatinizer
 
-  def initialize()
-    @words = "abcd".split(" ")
-  end
-
-  def piglatinize
-    plwords = @words.collect do |word|
+  def piglatinize(word)
+    plwords = word.collect do |word|
       letters = word.split()
       cons = []
       latinized = ""
