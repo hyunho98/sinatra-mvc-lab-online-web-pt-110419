@@ -21,6 +21,7 @@ class PigLatinizer
       end
 
       latinized + "ay"
+      binding.pry
     end
     plwords.join(" ")
   end
