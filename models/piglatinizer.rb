@@ -1,6 +1,5 @@
 class PigLatinizer
 
-
   def initialize(words)
     @words = words.split(" ")
   end
