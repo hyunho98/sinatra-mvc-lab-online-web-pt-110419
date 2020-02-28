@@ -11,7 +11,7 @@ class PigLatinizer
       cons = []
       latinized = ""
 
-      until letters.first() != /[aeiou]/
+      until letters.first() === /[aeiou]/
         cons.push(letters.shift)
       end
 
@@ -20,7 +20,7 @@ class PigLatinizer
       else
         latinized = letters.join() + cons.join()
       end
-      
+
       latinized + "ay"
     end
 
