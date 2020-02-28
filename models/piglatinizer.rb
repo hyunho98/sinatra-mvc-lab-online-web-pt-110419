@@ -9,7 +9,7 @@ class PigLatinizer
       latinized = ""
 
       if word.length > 1
-        until letters.first.match(/[aeiou]/) || letters.empty?
+        until letters.first.match(/[aeiou]/i) || letters.empty?
           cons.push(letters.shift)
         end
       end
