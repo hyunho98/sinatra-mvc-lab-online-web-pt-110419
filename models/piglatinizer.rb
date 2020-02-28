@@ -4,7 +4,7 @@ class PigLatinizer
   def piglatinize(phrase)
     words = phrase.split(" ")
     plwords = words.collect do |word|
-      letters = word.split("")
+      letters = word.split()
       cons = []
       latinized = ""
 
