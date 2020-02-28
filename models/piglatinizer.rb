@@ -8,7 +8,10 @@ class PigLatinizer
   def piglatinize
     plwords = @words.collect do |word|
       letters = word.split()
+      cons = []
       until letters.first() != /[aeiou]/
+        cons.push(letters.shift)
+      end
 
 
 end
