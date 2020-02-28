@@ -9,9 +9,22 @@ class PigLatinizer
     plwords = @words.collect do |word|
       letters = word.split()
       cons = []
+      latinized = ""
+
       until letters.first() != /[aeiou]/
         cons.push(letters.shift)
       end
+
+      if cons.length == 0
+        latinized = word + "w"
+      else
+        cons.length.times do
+          letters.shift
+        end
+        latinized = letters.join() + cons.join()
+      end
+      latinized + "ay"
+    end
 
 
 end
